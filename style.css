@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ul-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.container {
+    width: 300px;
+    height: 500px;
+    background: url(img/background.png) no-repeat center/cover;
+    position: relative;
+    border-top: solid 30px rgb(27, 27, 27);
+    border-bottom: solid 40px rgb(27, 27, 27);
+    border-left: solid 15px rgb(27, 27, 27);
+    border-right: solid 15px rgb(27, 27, 27);
+    border-radius: 2em;
+    margin-bottom: 1.4em;
+}
+
+.notification {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 33, 83, 0.561);
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    width: calc(100% - 10px);
+    color: rgb(216, 214, 214);
+}
+
+img {
+    width: 25px;
+    height: 25px;
+}
+
+.apps {
+    width: 45px;
+    height: 45px;
+}
+
+.apps-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    bottom: .3em;
+    left: 0;
+}
+
+.phone-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    bottom: -33px;
+    left: 0;
+}
+
+.ph-but:nth-child(1) {
+    transform: rotate(90deg);
+}
+
+.status-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .2em .3em;
+}
+
+.status-bar img {
+    width: 17px;
+    height: 17px;
+    margin-left: 4px;
+}
+
+.status-bar img:nth-child(2n+1) {
+    height: 15px;
+}
+
+.status-bar span {
+    font-size: .8rem;
+    color: rgb(226, 226, 226);
+}
+
+.sb-left,
+.sb-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sb-right img {
+    margin: 0 4px;
+    width: 23px;
+}
+
+.button {
+    background-color: rgb(4, 207, 226);
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    padding: .2em;
+}
+
+.tranzitie {
+    transition: transform .3s, opacity .15s;
+    transform: translateX(-700px);
+    opacity: 0;
+}
