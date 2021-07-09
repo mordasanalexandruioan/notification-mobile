@@ -29,10 +29,10 @@ body {
     height: 500px;
     background: url(img/background.png) no-repeat center/cover;
     position: relative;
-    border-top: solid 30px rgb(27, 27, 27);
-    border-bottom: solid 40px rgb(27, 27, 27);
-    border-left: solid 15px rgb(27, 27, 27);
-    border-right: solid 15px rgb(27, 27, 27);
+    border-top: solid 30px rgb(17, 17, 17);
+    border-bottom: solid 40px rgb(20, 20, 20);
+    border-left: solid 15px rgb(15, 15, 15);
+    border-right: solid 15px rgb(15, 15, 15);
     border-radius: 2em;
     margin-bottom: 1.4em;
 }
@@ -65,8 +65,17 @@ img {
     width: 100%;
     align-items: center;
     position: absolute;
-    bottom: .3em;
+    bottom: .6em;
     left: 0;
+}
+
+.apps-box img:last-child {
+    border-radius: 50%;
+}
+
+.apps-box img:nth-child(3) {
+    width: 50px;
+    height: 50px;
 }
 
 .phone-buttons {
@@ -90,6 +99,7 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: .2em .3em;
+    background-color: rgba(0, 0, 0, 0.171);
 }
 
 .status-bar img {
@@ -128,7 +138,7 @@ img {
 }
 
 .tranzitie {
-    transition: transform .3s, opacity .15s;
+    transition: transform .6s, opacity .35s;
     transform: translateX(-700px);
     opacity: 0;
 }

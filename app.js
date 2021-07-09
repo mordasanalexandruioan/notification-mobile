@@ -13,7 +13,7 @@ button.addEventListener('click', (e) => {
 
     setTimeout(() => {
         ul.removeChild(notifications);
-    }, 300);
+    }, 600);
 
 
 
